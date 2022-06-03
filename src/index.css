@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  color: white;
+}
+
+.tapListHeading {
+  color: seagreen;
+}
+
+#taps-image {
+  max-width: 75px;
+  margin: 1%;
+}
