@@ -12,6 +12,7 @@
 * HTML
 * CSS
 * NPM
+* JSX
 * Javascript
 * React
 
