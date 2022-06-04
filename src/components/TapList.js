@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 function TapList(props) {
   return (
     <React.Fragment>
-      <h1 className="tapListHeading">Tap List</h1>
-      <hr />
 
+<ul class="list-group">
       <div>
         {props.tapList.map((tap) => 
-          <div style={{backgroundColor: "#bdb76b"}}>
+          <div>
+            <hr />
             <Tap
               whenTapClicked = {props.onTapSelection}
               name={tap.name}
@@ -23,6 +23,7 @@ function TapList(props) {
           </div>
         )}
       </div>
+  </ul>
     </React.Fragment>
   );
 }

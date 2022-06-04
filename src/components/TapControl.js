@@ -4,6 +4,7 @@ import TapList from './TapList';
 import TapDetail from './TapDetail';
 import EditTapForm from './EditTapForm';
 import TapData from './TapData';
+import ProgressBar from 'react-bootstrap/ProgressBar';
 
 class TapControl extends React.Component {
 
@@ -76,6 +77,7 @@ class TapControl extends React.Component {
     } 
   }
 
+
   render() {
     let currentlyVisibleState = null;
     let buttonText = null;
@@ -100,7 +102,7 @@ class TapControl extends React.Component {
     return(
       <React.Fragment>
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
+        <button onClick={this.handleClick} className="btn btn-primary">{buttonText}</button>
       </React.Fragment>
     );
   }

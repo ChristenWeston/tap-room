@@ -12,13 +12,12 @@ function NewTapForm(props) {
 
   return (
     <React.Fragment>
-      <div className="card bodyFont p-4 x-50 mx-auto" style={{backgroundColor: "white"}}>
         <h1 className="headingFont" style={{color: "black"}}>Add New Keg to Tap List</h1>
         <hr />
         <ReusableForm 
           formSubmissionHandler={handleNewTapFormSubmission}
           buttonText='Add Keg to Tap List' />
-      </div>
+
     </React.Fragment>
   )
 }

@@ -1,14 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function TapDetail(props) {
   const { tap, onClickingDelete, onClickingDecrease } = props;
   const pints = tap.availablePints === 0 ? "Keg empty" : tap.availablePints;
-
-  const buyButton = tap.availablePints === 0 ? <p></p> : <button onClick={() => onClickingDecrease(tap.id)}>Buy Pint</button>
+  const buyButton = tap.availablePints === 0 ? <p></p> : <button onClick={() => onClickingDecrease(tap.id)} className="btn btn-info">Buy Pint</button>
   return (
     <React.Fragment>
-        <div className="headingFont card-header text-center text-black">{tap.brand}</div>
+        <div className="headingFont card-header text-center text-black">Beer Details</div>
           <div className="card-body">
             <h1>Keg Details:</h1>
             <hr />
@@ -22,8 +21,8 @@ function TapDetail(props) {
           <div className="card-footer justify-content-center">
           {buyButton}
           <br/>
-            <button onClick={props.onClickingEdit} className="btn shadow mr-2 updateBtn">Update Tap</button>
-            <button onClick={() => onClickingDelete(tap.id)} className="btn shadow deleteBtn">Delete Tap</button>
+            <button onClick={props.onClickingEdit} className="btn btn-info">Update Tap</button>
+            <button onClick={() => onClickingDelete(tap.id)} className="btn btn-info">Delete Tap</button>
           </div>
     </React.Fragment>
   );
